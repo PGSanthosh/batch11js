@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Welcome to JS</title>
+    <script>
+        var myName="Varma";
+        var age=46;
+        var isStudent=false;
+
+        age="Fourty six";
+
+        console.log("Welcome to " + myName);
+
+
+        var x;
+
+        
+        var student={
+            name:"Varma",
+            age:46,
+            isStudent:false,
+            "college name":"JNTU",
+            1:"one"
+        }
+
+
+        var color="red";
+
+        if(color=="red"){
+            console.log("color is red")
+        }
+        else if(color=="black"){
+            console.log("color is black")
+        }
+        else if(color=="green"){
+            console.log("color is green")
+        }
+        else
+        {
+            console.log("color is unknown")
+        }
+
+        var a=2;
+
+        if(a){
+
+        }
+        else
+        {
+
+        }
+
+        var age=13;
+
+        if(age<13){
+            console.log("toddler")
+        }
+        else if((age>=13) && (age<=19)){
+            console.log("teenager")
+        }
+        else {
+            console.log("adult")
+        }
+
+        if(!(color=="black")){
+
+        }
+
+        //ternary operator - short form of if-else
+        (color=="red") ? console.log("red") : console.log("unknow");
+
+        //switch
+
+        switch(color){
+            case "red":
+                console.log("Red");
+                break;
+            case "black":
+                console.log("black");
+                break;
+            default:
+                console.log("unknown");
+        }
+
+        //while
+
+        var a=0;
+
+        while(a<=10){
+            console.log(a);
+            a++;
+        }
+
+        var b=0;
+
+        do {
+            console.log(b);
+            b++;
+        }
+        while(b<=10)
+
+        for(var i=0;i<=10;i++){
+            if(i==5) continue;
+            console.log(i);
+        }
+
+        //break
+        //continue
+
+        console.log(add(1,2));
+
+        //function declaration
+        function add(a,b){
+            return a+b;
+        }
+
+        var a=10;
+
+        //JavaScript Hoisting
+
+        //function expression
+        var sum=function(a,b){
+            return a+b;
+        }
+
+        console.log(sum(1,2));
+
+        var myNumbers=["one","two","three"]
+
+        myNumbers.forEach(function(value,position){
+            console.log(value + " at " + position)
+        })
+
+        var myLetters=["a","b","c"];
+
+        
+    </script>
+    <script src="class.js"></script>
+</head>
+<body>
+    <h1>Welcome to Batch 10 JS Class</h1>
+</body>
+</html>
