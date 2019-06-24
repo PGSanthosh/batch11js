@@ -236,11 +236,10 @@
         var theaters=movies.reduce(function(theaters,movie){
                 movie.theaters.forEach(function(theater){
                     if(theaters.indexOf(theater)==-1)
-                    {
+                    { 
                         theaters.push(theater);
                     }
-                })
-
+                });
                 return theaters;
         },[])
 
@@ -258,7 +257,7 @@
         })
 
         //findIndex
-        
+
         console.log(bahubali)
 
 
@@ -266,7 +265,77 @@
         book.title="JS Fundamentals";
         book["author"]="Varma";
 
+        //HTML5
+
+        //localStorage
+        localStorage.setItem("username","varma");
+
+        var userName=localStorage.getItem("username")
+        console.log(userName)
+        // localStorage.removeItem("username");
+        // localStorage.clear() //clears all items
+
+        //sessionStorage
+
+        var teacher={}
+
+        teacher.name="Varma";
+        teacher["subject"]="Maths"
+
+        var key="college";
+        teacher[key]="JNTU";
+
+        delete teacher.college
+
+        for(var k in teacher){
+            console.log(teacher[k])
+        }
+
+        var student={
+            section:"B"
+        }
+        var professor=Object.assign({},teacher,student);
+
+        //professor.university="JNTU";
+
+        /*
+            [
+                {
+                    key:"name",
+                    value:"Varma"
+                },
+                {
+                    key:"subject",
+                    value:"Math"
+                }
+            ]
+
+        */
+
+
         
+        var professorArray=Object.keys(professor).reduce(function (arrayRep, key) 
+                            {
+                                return arrayRep.concat([ { "key": key, "value": professor[key] } ]);
+                            }, []);
+
+        
+        console.log(professorArray);
+
+        
+        var institute={
+            name:"Coding Sastra",
+            address: {
+                street:"MIG 27/1",
+                city:"Hyderabad"
+            }
+        }
+
+        var myName="Varma";
+
+        var myGreeting="Happy New Year,Varma";
+
+
     </script>
     <script src="class.js"></script>
 </head>
